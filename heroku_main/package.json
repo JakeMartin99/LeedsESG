@@ -2,7 +2,7 @@
   "name": "leeds-esg-club",
   "version": "1.0.0",
   "description": "Webpage for the Leeds ESG club",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js"
@@ -21,6 +21,8 @@
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "pg": "^8.3.3",
+    "pg-promise": "^10.7.3",
+    "postgres": "^1.0.2",
     "session": "^0.1.0"
   },
   "devDependencies": {
@@ -28,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url" : "https://git.heroku.com/leeds-esg-club.git"
+    "url": "https://git.heroku.com/leeds-esg-club.git"
   }
 }
