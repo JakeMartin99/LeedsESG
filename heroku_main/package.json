@@ -31,5 +31,9 @@
   "repository": {
     "type": "git",
     "url": "https://git.heroku.com/leeds-esg-club.git"
+  },
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
   }
 }
