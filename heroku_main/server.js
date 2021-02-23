@@ -20,7 +20,52 @@ app.set('view engine','ejs');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
-	res.render('pages/index');
+	res.render('pages/index',{
+    pagename:"home",
+    construction: false
+  });
+});
+
+app.get('/WhatIsESG', function (req, res) {
+	res.render('pages/whatisesg',{
+    pagename:"whatisesg",
+    construction: true
+  });
+});
+
+app.get('/Environment', function (req, res) {
+	res.render('pages/environment',{
+    pagename:"environment",
+    construction: true
+  });
+});
+
+app.get('/Social', function (req, res) {
+	res.render('pages/social',{
+    pagename:"social",
+    construction: true
+  });
+});
+
+app.get('/Governance', function (req, res) {
+	res.render('pages/governance',{
+    pagename:"governance",
+    construction: true
+  });
+});
+
+app.get('/Newsletter', function (req, res) {
+	res.render('pages/newsletter',{
+    pagename:"newsletter",
+    construction: true
+  });
+});
+
+app.get('/AboutUs', function (req, res) {
+	res.render('pages/aboutus',{
+    pagename:"aboutus",
+    construction: true
+  });
 });
 
 app.listen(PORT, ()=> {

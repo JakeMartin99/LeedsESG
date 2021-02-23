@@ -1,13 +1,19 @@
 html{
   margin: 0;
   height: 100%;
+  width: 100%;
 }
 
 body{
-  background-image: url("../img/flatirons.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+body.home{
+  background-image: url("../img/flatirons.jpg");
+}
+body.construction{
+  background-image: url("../img/construction.jpg");
 }
 
 footer{
