@@ -1,0 +1,29 @@
+html{
+  margin: 0;
+  height: 100%;
+}
+
+body{
+  background-image: url("../img/flatirons.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#welcomebox{
+  width: 20rem;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#linkbox{
+  width: 30rem;
+  margin-left: 60%;
+  margin-top: 10%;
+}

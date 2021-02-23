@@ -7,6 +7,7 @@
 
 const express = require('express');
 const app = express();
+app.listen(process.env.PORT);
 const PORT = 54842;
 const bodyParser = require('body-parser');
 app.use(bodyParser.json());              // support json encoded bodies
@@ -19,7 +20,7 @@ app.set('view engine','ejs');
 app.use(express.static(__dirname + '/'));
 
 app.get('/', function (req, res) {
-	res.render('index');
+	res.render('pages/index');
 });
 
 app.listen(PORT, ()=> {
