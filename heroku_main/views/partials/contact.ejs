@@ -1,0 +1,29 @@
+<div id="myContact" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="avatar">
+          <img src="../../img/mail_icon.png" width="50px" height="50px">
+        </div>
+        <h4 class="modal-title">Contact Us</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/contact" method="POST">
+          <div>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div>
+            <textarea class="form-control" type="text" rows="5" id="msg" name="msg" placeholder="Message" required></textarea>
+          </div>
+          <div>
+            <input class="btn btn-block login-btn" type="submit" value="Send Message">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
